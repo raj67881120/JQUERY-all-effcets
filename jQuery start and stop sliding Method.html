@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<button id="stop">Stop sliding</button>
+
+<div id="flip">Click to slide down panel</div>
+<div id="panel">What are the 10 most popular poems?
+
+Plus Some Bonus Poems, Because We Love You
+William Carlos Williams, “The Red Wheelbarrow” ...
+T. S. Eliot, “The Waste Land” ...
+Robert Frost, “The Road Not Taken” ...
+Gwendolyn Brooks, “We Real Cool” ...
+Elizabeth Bishop, “One Art” ...
+Emily Dickinson, “Because I could not stop for Death –” ...
+Langston Hughes, “Harlem” ...
+Sylvia Plath, “Daddy”!</div>
+
+</body>
+</html>

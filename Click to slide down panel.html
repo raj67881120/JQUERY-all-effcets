@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Click to slide down panel</div>
+<div id="panel">“WHAT I WOULD LIKE TO GROW IN MY GARDEN” BY KATHERINE RIEGEL
+Excerpt:
+
+Peonies, heavy and pink as ’80s bridesmaid dresses
+and scented just the same. Sweet pea,
+because I like clashing smells and the car
+I drove in college was named that: a pea-green
+Datsun with a tendency to backfire.</div>
+
+</body>
+</html>
